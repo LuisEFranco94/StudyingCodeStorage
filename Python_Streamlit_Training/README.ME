@@ -1,0 +1,27 @@
+To install streamlit,
+
+Note: You will need a virtual environment:
+Recommended:
+$ python3.10 -m venv .venv
+$ source .venv/bin/activate 
+or 
+$ .venv/Scripts/Activate.ps1
+
+1) Run on terminal,
+$ pip install streamlit
+
+2) Then to run a basic demo
+$ streamlit hello
+
+Note:
+You might need to correct a few issues such as ...
+1) ModuleNotFoundError: No module named 'altair.vegalite.v4'
+Resolved by..
+$ pip install altair==4.2.2
+
+2) AttributeError: 'Deck' object has no attribute 'deck_widget' 
+Install the previous version:
+$ pip install pydeck==0.7.1
+
+
+
