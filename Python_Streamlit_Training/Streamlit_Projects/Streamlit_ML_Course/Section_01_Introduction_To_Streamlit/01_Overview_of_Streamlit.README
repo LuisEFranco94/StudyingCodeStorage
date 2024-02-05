@@ -1,0 +1,53 @@
+Streamlit is an open-source Python library 
+
+Allows us to create data applications:
+    - Deploy a machine learning model
+    - Deploy a dashboard
+    - Share a data science project
+
+Everything lives in Python files
+
+Dev Flow:
+    - Make changes to files
+    - Save files
+    - Streamlit detects changes and displays them on the browser
+
+Data Flow:
+    1a) Source code change
+    1b) User interaction
+
+    2a) Run callbacks
+    2b) Run script from top to bottom
+    
+    3) Output to browser
+
+Caching:
+
+With caching, we can avoid running expensive code
+
+
+| @st.cache_data                        | @st.cache_resource          | 
+| --------------------------------------|:---------------------------:| 
+| Serializable objects                  | Unserializable objects      | 
+|   - Functions                         |   - ML models               |  
+|   - API calls                         |   - Database connections    |   
+|   - Dataframes                        |                             |
+|   - etc                               |                             |    
+
+Other key features of Streamlit:
+    - Display text
+    - Display plots (matplotlib, plotly)
+    - Interactivity (radio buttons, checkboxes, forms, sliders, etc)
+    - Multi-page apps 
+    - Stateful apps 
+    - Database connections
+
+What you need to remember
+    - Streamlit runs Python script from top to bottom
+    - Everytime the source code changes of a user changes the value of a widget,
+      the script reruns
+    - Use caching to avoid running expensive functions all the time, so updates are faster
+
+
+
+
